@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router matches snapshot 1`] = `
+<DocumentFragment>
+  <p>
+    Component
+  </p>
+</DocumentFragment>
+`;

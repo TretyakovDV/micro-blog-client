@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.header__title {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > button {
+    color: white !important;
+    text-decoration: none;
+}
+
+a  span {
+    text-decoration: none;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 400px;
+}
+
+.MuiFormControl-root {
+    margin-bottom: 20px !important;
+}
+
+.image-upload {
+    margin-bottom: 10px !important;
+}
+
+.add-image {
+    width: 100%;
+}
+
+.add-form {
+    width: 600px;
+}
+
+.card__title {
+    margin-bottom: 30px !important;
+    height: 100px;
+}
+
+.card__button {
+    color: #3f51b5 !important;
+    margin-top: 20px !important;
+}
+
+.card__button--delete {
+    color: #f50057 !important;
+    margin-left: 10px !important;
+}
+
+.media {
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.list {
+    flex-grow: 1;
+}
+
+.post__image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.interesting {
+    padding-top: 47px;
+    padding-left: 30px;
+}
+
+.interesting__link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.interesting__link:first-child {
+    margin-top: 20px;
+}
+
+#button-file {
+    display: none;
+}
+
+
+@media (max-width: 960px) {
+    .title {
+        font-size: 65px !important;
+    }
+}
