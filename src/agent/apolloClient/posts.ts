@@ -22,7 +22,7 @@ class Posts {
     });
   }
 
-  deletePost(id: string) {
+  deletePost(id: string): any {
     return this.client?.mutate({
       mutation: gql`
             mutation($id: ID) {
@@ -33,7 +33,7 @@ class Posts {
     });
   }
 
-  addPost(title: string, body: string, image: string, author: string) {
+  addPost(title: string, body: string, image: string, author: string): any {
     return this.client?.mutate({
       mutation: gql`
           mutation($title: String, $body: String, $image: String, $author: String) {

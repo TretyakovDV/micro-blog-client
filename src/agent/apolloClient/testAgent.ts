@@ -7,7 +7,7 @@ class TestAgent {
 
   client: ApolloClient<any> | null = null;
 
-  getRates() {
+  getRates(): any {
     return this.client?.query({
       query: gql`
             query GetRates {

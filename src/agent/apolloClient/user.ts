@@ -7,7 +7,7 @@ class User {
 
   client: ApolloClient<any> | null = null;
 
-  login(email: string, password: string) {
+  login(email: string, password: string): any {
     return this.client?.mutate({
       mutation: gql`
         mutation ($email: String, $password: String) {
@@ -17,7 +17,7 @@ class User {
     });
   }
 
-  logout() {
+  logout(): any {
     return this.client?.mutate({
       mutation: gql`
         mutation {

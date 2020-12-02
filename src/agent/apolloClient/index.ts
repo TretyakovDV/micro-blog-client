@@ -5,7 +5,7 @@ import Posts from './posts';
 import User from './user';
 
 const link = createHttpLink({
-  uri: process.env.API_HOST || 'http://localhost:4000/graphql',
+  uri: 'https://micro-blog-server.herokuapp.com/graphql',
   credentials: 'include',
 });
 

@@ -65,8 +65,6 @@ export class Posts implements IPosts {
   async requestPosts() {
     try {
       const res: ApolloQueryResult<ServerPosts> | undefined = await agent.posts.getPost();
-      console.log('res => ', res);
-
       res?.data?.posts.map((el: ServerPost) => this.postsList.set(el.id, el));
       // eslint-disable-next-line no-empty
     } catch (e) {}
