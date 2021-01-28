@@ -4,5 +4,7 @@ describe('Logout', () => {
       cy.url().should('include', '/')
 
       cy.contains('span.MuiButton-label', 'Logout').parent().click()
+    
+      cy.url().should('include', '/sign-in')
   });
 });
